@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", Verdana, sans-serif;
+}
+
+/* main screen one */
+
+main .screen-one-dws {
+    width: 100%;
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .screen-one-dws .cover {
+    width: 100%;
+    height: 60vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+main .screen-one-dws .cover h1 {
+    font-size: 45px;
+    font-family: "Bungee", sans-serif;
+    line-height: 60px;
+}
+
+main .screen-one-dws .cover p {
+    font-size: 20px;
+    font-family: "Antonio";
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    text-indent: 10px;
+}
+
+/* main screen two */
+
+main .screen-two-dws {
+    width: 100%;
+    height: 900px;
+    padding-block: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 3rem;
+    color: white;
+}
+
+main .screen-two-dws .part {
+    width: 30%;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+main .screen-two-dws .part .tag {
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 50px;
+    background-color: white;
+}
+
+main .screen-two-dws .part .card {
+    width: 100%;
+    height: 290px;
+    border-radius: 40px;
+    padding-block: 1rem;
+    margin-block: 1rem;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.3s ease;
+    background-color: antiquewhite;
+}
+
+main .screen-two-dws .part .card:hover {
+    width: 105%;
+    height: 300px;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.5);
+}
+
+main .screen-two-dws .card .img {
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+main .screen-two-dws .card .in {
+    width: 130px;
+    height: 130px;
+    border-radius: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+}
+main .screen-two-dws .part .card .text {
+    width: 90%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+main .screen-two-dws .bfr-marry {
+    background-color: rgb(255, 232, 251);
+}
+
+main .screen-two-dws .bfr-marry .card {
+    background-color: rgb(255, 177, 242);
+}
+
+main .screen-two-dws .bfr-child {
+    background-color: rgb(219, 231, 255);
+}
+
+main .screen-two-dws .bfr-child .card {
+    background-color: rgb(168, 197, 255);
+}
+
+main .screen-two-dws .pregnant {
+    background-color: rgb(219, 255, 247);
+}
+
+main .screen-two-dws .pregnant .card {
+    background-color: rgb(163, 255, 229);
+}
+
+@media screen and (max-width:768px) {
+    main .screen-one-dws .cover {
+        text-align: center;
+
+    }
+    main .screen-one-dws .cover h1 {
+        font-size: 30px;
+        width: 70%;
+        line-height: 40px;
+    }
+    main .screen-two-dws {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main .screen-two-dws .part {
+        width: 90%;
+    }
+    main .screen-two-dws .card {
+        width: 100%;
+        height: 370px;
+        padding-block: 20px;
+        padding-inline: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    main .screen-two-dws .card:hover {
+        height: 380px;
+        box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.5);
+    }
+    main .screen-two-dws .card .text {
+        width: 70%;
+        padding-top: 10px;
+        text-align: center;
+        padding-right: 20px;
+    }
+    main .screen-two-dws .card .text h1 {
+        font-size: 30px;
+    }
+    main .screen-two-dws .card .text p {
+        font-size: 13px;
+    }
+}
+

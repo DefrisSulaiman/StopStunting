@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar</title>
+    <style>
+        .container {
+            margin: 20px auto;
+            width: 50%;
+            text-align: center;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 70%;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        #searchResult {
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="searchInput" placeholder="Cari..." oninput="showPreview()">
+        <button onclick="search()">Cari</button>
+    </div>
+    <div id="searchPreview"></div>
+    <div id="searchResult"></div>
+
+    <script>
+
+
+    </script>
+</body>
+</html>

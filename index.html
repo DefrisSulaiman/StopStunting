@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="image/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <title>StopStunting | Metamorfosa</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <ul class="part-one">
+                <li><a href="index.html"><img src="image/logo2.png" alt="Logo StopStunting"></a></li>
+            </ul>
+
+            <div class="part-two">
+                <a href="#home" id="home"><i class="fa fa-home"></i> Beranda</a>
+                <a href="#article"><i class="fa fa-book"></i> Artikel</a>
+                <a href="#pgz"><i class="fa fa-eye"></i> Pantau Gizi</a>
+                <a href="about.html"><i class="fa fa-user"></i> Tentang Kami</a>
+            </div>
+            <ul class="part-three">
+                <li><a href="about.html"><i class="fa fa-phone"></i> Hubungi Kami</a></li>
+            </ul>
+            <div class="part-four">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+        <div class="part-five" id="myLinks">
+            <a href="#home" id="home"><i class="fa fa-home"></i> Beranda</a>
+            <a href="#article"><i class="fa fa-book"></i> Artikel</a>
+            <a href="#pgz"><i class="fa fa-eye"></i> Pantau Gizi</a>
+            <a href="about.html"><i class="fa fa-user"></i> Tentang Kami</a>
+            <a href="about.html"><i class="fa fa-phone"></i> Hubungi Kami</a>
+        </div> 
+        <script src="logic/home.js"></script>
+    </header>
+    <main>
+        <div class="screen-one screen" id="home">
+            <div class="part-one">
+                <div class="back-text">
+                    <h1 class="txt">TANPA STUNTING</h1>
+                    <h2 class="txt">INDONESIA SEHAT KITA TUMBUH BERSAMA</h2>
+                    <p class="txt">Stunting adalah gangguan pertumbuhan fisik 
+                        dan perkembangan otak pada anak akibat 
+                        kekurangan gizi kronis. Website StopStunting 
+                        hadir untuk memberikan informasi dan sumber 
+                        daya tentang penyebab, dampak, dan langkah 
+                        pencegahan stunting. <span>Dengan menyatukan orang 
+                        tua, guru, dan praktisi kesehatan, website 
+                        ini memperkuat kesadaran dan aksi untuk 
+                        mengatasi masalah gizi buruk ini. 
+                        StopStunting bukan hanya sebuah website, 
+                        tapi juga sebuah gerakan untuk menciptakan 
+                        generasi yang lebih sehat dan berkembang 
+                        optimal.</span></p>
+                        <a href="https://www.youtube.com/watch?v=ZuHRHv-_KXw" id="full"><i class="fa fa-play"></i> Video Tentang Stunting</a>
+                    
+                </div>
+                <div class="front-img">
+                    <img src="image/smiless.png" alt="Banner Awal">
+                </div>
+            </div>
+            <div class="part-two">
+                <div class="quote">
+                    <p>"Sehat membawa kebahagiaan, dan gizi 
+                    yang baik membawa kesehatan. Maka, 
+                    makanlah makanan yang bergizi agar 
+                    kamu tetap bahagia."</p>
+                </div>
+                <div class="search-bar">
+                    <div class="container">
+                        <input type="text" id="searchInput" placeholder="Cari Artikel" oninput="showPreview()">
+                        <button onclick="search()"><i class="fa fa-search"></i></button>
+                    </div>
+                    <div class="result" id="searchPreview"></div>
+                    <div id="searchResult"></div>
+                </div>
+                <script src="logic/search.js"></script>
+                <hr>
+            </div>
+        </div>
+        <div class="screen-two" id="article">
+            <div class="title">
+                <h1>ARTIKEL KHUSUS UNTUKMU</h1>
+                <p>dapatkan jawaban yang sesuai!</p>
+            </div>
+            <div class="card-container">
+                <a href="balita.html" class="card-article">
+                    <p>Balita</p>
+                    <div class="img red">
+                        <img src="image/balitas.png" alt="">
+                    </div>
+                </a>
+                <a href="remaja.html" class="card-article">
+                    <p>Remaja</p>
+                    <div class="img blue">
+                        <img src="image/remajas.png" alt="">
+                    </div>
+                </a>
+                <a href="dewasa.html" class="card-article">
+                    <p>Dewasa</p>
+                    <div class="img yellow">
+                        <img src="image/orangtuas.png" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="screen-three" id="recipe">
+            <div class="title">
+                <h1 class="space">RESEP</h1>
+                <h1>MAKANAN</h1>
+                <h1 class="space">SEHAT</h1>
+                <p>masakan sehat dan lezat yang 
+                    bisa kalian coba dirumah</p>
+            </div>
+            <div class="food-container">
+                <a href="article-rsp-01.html" class="food-card">
+                    <div class="img" style="background-image: url('../image/foodone.png');"></div>
+                    <p>PUDING KELOR</p>
+                </a>
+                <a href="article-rsp-02.html" class="food-card">
+                    <div class="img" style="background-image: url('../image/foodtwo.png');"></div>
+                    <p>CORNMILK</p>
+                </a>
+                <a href="article-rsp-03.html" class="food-card">
+                    <div class="img" style="background-image: url('../image/foodthree.png');"></div>
+                    <p>BUBUR SAYUR</p>
+                </a>
+            </div>
+        </div>
+        <div class="screen-four">
+            <div class="title" id="guide">
+                <h1>PANDUAN PENCEGAHAN</h1>
+                <p>berikan pencegahan tepat untuk hasil terbaik dari artikel disini</p>
+            </div>
+            <div class="ten-diagram">
+                <a href="article-pp-01.html" class="diagram one">
+                    <p>Periksa Kesehatan</p>
+                    <h1 style="transform: translateY(230px);">1</h1>
+                </a>
+                <a href="article-pp-02.html" class="diagram two">
+                    <p>Hindari Zat Adiktif</p>
+                    <h1 style="transform: translateY(220px);">2</h1>
+                </a>
+                <a href="article-pp-03.html" class="diagram three">
+                    <p>Peduli Kesehatan</p>
+                    <h1 style="transform: translateY(210px);">3</h1>
+                </a>
+                <a href="article-pp-04.html" class="diagram four">
+                    <p>Gizi Seimbang</p>
+                    <h1 style="transform: translateY(200px);">4</h1>
+                </a>
+                <a href="article-pp-05.html" class="diagram five">
+                    <p>Cukup Hidrasi</p>
+                    <h1 style="transform: translateY(190px);">5</h1>
+                </a>
+                <a href="article-pp-06.html" class="diagram six">
+                    <p>Kendali Stres</p>
+                    <h1 style="transform: translateY(180px);">6</h1>
+                </a>
+                <a href="article-pp-07.html" class="diagram seven">
+                    <p>Selalu Bersih</p>
+                    <h1 style="transform: translateY(170px);">7</h1>
+                </a>
+                <a href="article-pp-08.html" class="diagram eight">
+                    <p>Tidur Cukup</p>
+                    <h1 style="transform: translateY(160px);">8</h1>
+                </a>
+                <a href="article-pp-09.html" class="diagram nine">
+                    <p>Olahraga</p>
+                    <h1 style="transform: translateY(150px);">9</h1>
+                </a>
+                <a href="article-pp-10.html" class="diagram ten">
+                    <p>Vaksinasi</p>
+                    <h1 style="transform: translateY(140px);">10</h1>
+                </a>
+            </div>
+        </div>
+        <div class="screen-five">
+            <div class="title" id="pgz">
+                <h1>PANTAU GIZI</h1>
+                <p>fitur kami untuk membantu memantau perkembangan gizimu!</p>
+            </div>
+            <div class="form-container">
+                <div class="img">
+                    <img src="image/favicon.png" alt="logo">
+                </div>
+                <form class="form" id="myForm">
+                    <div class="input">
+                        <div class="inp one">
+                            <label for="name">Nama</label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                        <div class="inp two">
+                            <label for="place">Tempat Tinggal</label>
+                            <input type="text" name="place" id="place" required>
+                        </div>
+                    </div>
+                    <button type="button" id="submitButton">Cek Perkembangan Gizi</button>
+                    <div id="errorDiv" style="color: red;"></div>
+                </form>
+            </div>
+        </div>
+        <div class="screen-six">
+            <div class="title">
+                <h1>APA KATA MEREKA?</h1>
+                <p>ulasan dari pengguna website kami!</p>
+            </div>
+            <div class="rating">
+                <div class="scroll">
+                    <marquee behavior="scroll" direction="left" scrollamount="5" loop="infinite" style="width:100%">
+                        <div class="card-container">
+                            <div class="card">
+                                <p><span>Sarah Johnson</span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </p>
+                                <p>"Situs web ini sangat informatif<br>dan membantu sekali!"</p>
+                            </div>
+                            <div class="card">
+                                <p><span>Michael Smith</span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </p>
+                                <p>"Artikel-artikelnya bermanfaat. Saya<br>jadi lebih aware tentang<br>masalah stunting."</p>
+                            </div>
+                            <div class="card">
+                                <p><span>Emily Brown</span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </p>
+                                <p>"Desain webnya menarik dan responsif."</p>
+                            </div>
+                            <div class="card">
+                                <p><span>David Wilson</span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </p>
+                                <p>"Saya suka fitur pantau gizinya,<br>sangat praktis dan mudah digunakan."</p>
+                            </div>
+                            <div class="card">
+                                <p><span>Jessica Martinez</span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </p>
+                                <p> "Webnya sangat user-friendly"</p>
+                            </div>
+                            <div class="card">
+                                <p><span>Christopher Taylor</span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </p>
+                                <p>"Artikel-artikelnya sangat<br>terperinci dan mudah dipahami."</p>
+                            </div>
+                        </div>
+                    </marquee>
+                </div>
+                <div class="scroll two">
+                    <marquee behavior="scroll" direction="right" scrollamount="5" loop="infinite" style="width:100%" >
+                        <div class="card-container">
+                            <div class="card">
+                                <p><span>Amanda Jones</span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </p>
+                                <p>"Fitur pencarian artikelnya<br>sangat membantu.</p>
+                            </div>
+                            <div class="card">
+                                <p><span>Matthew Anderson</span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </p>
+                                <p>"Saya suka bagaimana web ini<br>memberikan panduan praktis."</p>
+                            </div>
+                            <div class="card">
+                                <p><span>Lauren Garcia</span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </p>
+                                <p>"Situs web yang informatif<br>dan mudah dinavigasi."</p>
+                            </div>
+                            <div class="card">
+                                <p><span>Daniel Miller</span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </p>
+                                <p>Sangat menginspirasi!"</p>
+                            </div>
+                            <div class="card">
+                                <p><span>Ashley Thompson</span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </p>
+                                <p>"Web ini memberikan<br>solusi-solusi yang praktis."</p>
+                            </div>
+                            <div class="card">
+                                <p><span>James Davis</span>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </p>
+                                <p> "Situs web yang bagus dengan<br>konten-konten yang relevan."</p>
+                            </div>
+                        </div>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-container"></div>
+        <script src="logic/home.js"></script>
+    </footer>
+</body>
+</html>
